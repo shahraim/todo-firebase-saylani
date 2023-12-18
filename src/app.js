@@ -11,7 +11,7 @@ if (form) {
     createUserWithEmailAndPassword(auth, email.value, password.value)
       .then((userCredential) => {
         const user = userCredential.user;
-        window.location = "../public/login.html";
+        window.location = "../public/index.html";
         console.log(user);
       })
       .catch((error) => {
